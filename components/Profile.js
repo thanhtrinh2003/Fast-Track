@@ -10,7 +10,7 @@ import {
 const Profile = () => {
   return (
     <View>
-      <Image source={require("../assets/ProfileBanner.png")} style={{width: "100%", resizeMode: "contain"}}></Image>
+      <Image source={require("../assets/ProfileBanner.png")} style={styles.profileBanner}></Image>
       <Text style={styles.sectionTitle}>Email</Text>
       <View style={styles.box}>
         <Text style={styles.boxText}>coolguy@gmail.com</Text>
@@ -20,7 +20,7 @@ const Profile = () => {
         <Text style={styles.boxText}>0</Text>
       </View>
       <Text style={styles.sectionTitle}>Favorites</Text>
-      <Image source={require("../assets/FavoritesBar.png")} style={{height: 85, resizeMode: "contain", alignSelf: "center"}}></Image>
+      <Image source={require("../assets/FavoritesBar.png")} style={styles.favorites}></Image>
     </View>
   );
 };
@@ -33,9 +33,17 @@ const styles = StyleSheet.create({
     color: "#4A4B4A",
     fontWeight: 'bold'
   },
+  profileBanner: {
+    width: "100%", 
+    resizeMode: "contain"
+  },
   boxText: {
-    fontSize: 22,
-    
+    fontSize: 22
+  },
+  favorites: {
+    height: 85, 
+    resizeMode: "contain", 
+    alignSelf: "center"
   },
   box: {
     alignItems: "center",

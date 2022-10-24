@@ -26,7 +26,7 @@ const Tabs = () => {
             <PageHeader />
           </View>
         ),
-        tabBarIcon: ({focused, color, size}) => (
+        tabBarIcon: () => (
            <Image source={require("../assets/HomeMenuIcon.png")} style={styles.tinyLogo}/>
         ), 
       }}

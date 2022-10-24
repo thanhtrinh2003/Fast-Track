@@ -14,10 +14,6 @@ Parse.initialize('YOUR_APPLICATION_ID_HERE', 'YOUR_JAVASCRIPT_KEY_HERE');
 //Point to Back4App Parse API address 
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-
-
-
-
 const MapPage = () => {
   const [locList, changeLocList] = useState([new Parse.Object('Location')]);
 
