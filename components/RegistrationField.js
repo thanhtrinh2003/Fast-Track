@@ -1,11 +1,8 @@
-import { idempotency } from 'parse';
 import React from 'react';
-import {View, StyleSheet, TextInput, Text, Button, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, TextInput, Text, TouchableOpacity} from 'react-native';
 import 'react-native-gesture-handler';
 import { addPerson } from '../back4app/id';
 import  "../back4app/id";
-
-import { useState } from 'react';
 
 // In a React Native application
 import Parse from "parse/react-native.js";

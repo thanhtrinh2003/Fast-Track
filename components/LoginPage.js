@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Text, StyleSheet, View, Image, ImageBackground} from 'react-native';
+import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
 
 import LoginField from './LoginField';
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   login: {
     fontSize: 32,
     fontWeight: 'bold',
-    marginTop: '45%',
+    marginTop: '40%',
   },
   logo: {
     height: 100,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
   register: {
     fontSize: 12,
-    marginBottom: -100,
+    marginTop: 10
   },
 });
 

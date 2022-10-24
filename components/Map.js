@@ -17,7 +17,7 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
 const MapPage = () => {
   const [locList, changeLocList] = useState([new Parse.Object('Location')]);
 
-  async function fetchPerson() {
+  async function fetchLocations() {
     let query = new Parse.Query('Location');
     let queryResult = await query.find();
     console.log("here" + queryResult[0].get("Name"));
@@ -25,7 +25,7 @@ const MapPage = () => {
   }
 
   useEffect(() => {
-    fetchPerson()
+    fetchLocations()
   }, []);
 
   return (

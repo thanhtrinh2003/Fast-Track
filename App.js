@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
 
-  const [navigationShow, enableNavigation] = useState(true);
+  const [navigationShow, enableNavigation] = useState(false);
 
   if (navigationShow) {
     return (
@@ -18,7 +18,6 @@ const App = () => {
       <RegistrationPage onSubmit={enableNavigation}/>
     )
   }
-    
 }
 
 export default App;

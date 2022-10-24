@@ -1,14 +1,12 @@
 import React from 'react';
 import {View, StyleSheet, TextInput, Text, TouchableOpacity} from 'react-native';
 import 'react-native-gesture-handler';
-
+import { addPerson } from '../back4app/id';
 import  "../back4app/id";
 
 // In a React Native application
 import Parse from "parse/react-native.js";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
-
 
 //Initializing the SDK. 
 Parse.setAsyncStorage(AsyncStorage);
@@ -16,11 +14,10 @@ Parse.setAsyncStorage(AsyncStorage);
 Parse.initialize("WxgJ1NyL9Smyl1setR50X1GInxxfSNUcyQMvHOuo", "mLkmRkWcDQAiRcKTdzQtuXD5e7YPjIGwOHQsGnpx");
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-
-
-const LoginField = () => {
+const LoginField = (props) => {
   const [email, onChangeEmail] = React.useState('Email');
   const [password, onChangePass] = React.useState('Password');
+  const [retypePassword, onChangeRPass] = React.useState('Retype Password');
 
   return (
     <View>
@@ -33,13 +30,12 @@ const LoginField = () => {
         style={styles.input}
         onChangeText={onChangePass}
         value={password}
-        secureTextEntry={true}
       />
-      <Text style={styles.forget}>Forget Password?</Text>
+
       <TouchableOpacity style={styles.logButton} onPress = {async () => {
-          //fetch the data
+          //Later
       }}>
-        <Text style={styles.logText}>Log In</Text>
+        <Text style={styles.logText}>Confirm</Text>
       </TouchableOpacity>
     </View>
   );
