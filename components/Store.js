@@ -1,12 +1,8 @@
 import React from 'react';
-import {Image} from 'react-native';
+import { Image } from 'react-native';
 import { crowdLevel } from '../util/DescHelp';
 
-import {
-  Text,
-  StyleSheet,
-  View
-} from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 
 const Store = () => {
   this.state = {

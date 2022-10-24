@@ -1,11 +1,6 @@
 import React from 'react';
 
-import {
-  Text,
-  StyleSheet,
-  View,
-  Image
-} from 'react-native';
+import { Text, StyleSheet, View, Image } from 'react-native';
 
 const Profile = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Text, StyleSheet, View, Image, ImageBackground} from 'react-native';
+import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
 
 import RegistrationField from './RegistrationField';
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {Text, StyleSheet, View, Pressable} from 'react-native';
+import { Text, StyleSheet, View, Pressable } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 
 import { FindColor, GenDescription } from '../util/MarkerHelp';

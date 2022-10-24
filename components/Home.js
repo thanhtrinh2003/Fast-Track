@@ -1,12 +1,6 @@
 import React from 'react';
 
-import {
-  StyleSheet,
-  View,
-  Image,
-  ScrollView,
-  ImageBackground
-} from 'react-native';
+import { StyleSheet,View, Image, ScrollView, ImageBackground} from 'react-native';
 
 import HomeSearchBar from './HomeSearchBar';
 
